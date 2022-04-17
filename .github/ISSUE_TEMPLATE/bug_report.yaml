@@ -43,7 +43,7 @@ body:
       description: Which Saivvy's docker image are you running the software on?
       placeholder: e.g. ghcr.io/saivvy/perception-20.04-jp4.6-amd64  latest    bd6e912bc3ce
     validations:
-      required: true
+      required: false
   - type: markdown
     attributes:
       value: |
