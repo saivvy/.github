@@ -37,9 +37,9 @@ body:
     validations:
       required: false
   - type: input
-    id: os-version
+    id: docker-version
     attributes:
-      label: OS version
+      label: Docker image version
       description: Which Saivvy's docker image are you running the software on?
       placeholder: e.g. ghcr.io/saivvy/perception-20.04-jp4.6-amd64  latest    bd6e912bc3ce
     validations:
