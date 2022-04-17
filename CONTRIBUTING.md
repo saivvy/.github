@@ -1,21 +1,17 @@
-# Contributing to Dagger
+# Contributing to Saivvy
 
 ## GitHub Workflow
 
-The recommended workflow is to fork this repository and open pull requests from your fork.
+The recommended workflow is to create your own branch and open pull request once ready.
 
-### 1. Fork, clone & configure Dagger upstream
-
-- Click on the _Fork_ button on GitHub
-- Clone your fork
-- Add the upstream repository as a new remote
+### 1. clone the repository
 
 ```sh
 # Clone repository
-git clone https://github.com/$YOUR_GITHUB_USER/$REPOSITORY.git
+git clone https://github.com/saivvy/$REPOSITORY.git
 
 # Add upstream origin
-git remote add upstream git@github.com:dagger/$REPOSITORY.git
+git remote add upstream git@github.com:saivvy/$REPOSITORY.git
 ```
 
 ### 2. Create a pull request
@@ -33,26 +29,7 @@ git commit -s
 # Push your new feature branch
 git push my_feature_branch
 
-# Create a new pull request from https://github.com/dagger/$REPOSITORY
-```
-
-### 3. Update your pull request with latest changes
-
-```sh
-# Checkout main branch
-git checkout main
-
-# Update your fork's main branch from upstream
-git pull upstream main
-
-# Checkout your feature branch
-git checkout my_feature_branch
-
-# Rebase your feature branch changes on top of the updated main branch
-git rebase main
-
-# Update your pull request with latest changes
-git push -f my_feature_branch
+# Create a new pull request from https://github.com/saivvy/$REPOSITORY
 ```
 
 ## Scope of pull requests
@@ -60,32 +37,16 @@ git push -f my_feature_branch
 We prefer small incremental changes that can be reviewed and merged quickly.
 It's OK if it takes multiple pull requests to close an issue.
 
-The idea is that each improvement should land in Dagger's main branch within a
+The idea is that each improvement should land in saivvy's main branch within a
 few hours.  The sooner we can get multiple people looking at and agreeing on a
 specific change, the quicker we will have it out in a release.  The quicker we
-can get these small improvementes in a Dagger release, the quicker we can get
+can get these small improvementes in a Saivvy release, the quicker we can get
 feedback from our users and find out what doesn't work, or what we have missed.
 
 The added benefit is that this will force everyone to think about handling
 partially implemented features & non-breaking changes. Both are great
-approached, and they work really well in the context of Dagger.
+approached, and they work really well in the context of Saivvy.
 
-["Small incremental changes ftw"](https://github.com/dagger/dagger/pull/1348#issuecomment-1009628531) -> Small pull requests that get merged within hours!
-
-## Commits
-
-### DCO
-
-Contributions to this project must be accompanied by a Developer Certificate of
-Origin (DCO).
-
-All commit messages must contain the Signed-off-by line with an email address that matches the commit author. When commiting, use the `--signoff` flag:
-
-```sh
-git commit -s
-```
-
-The Signed-off-by line must match the **author's real name**, otherwise the PR will be rejected.
 
 ### Commit messages
 
@@ -145,9 +106,8 @@ markdownlint -c .markdownlint.yaml docs/**/*.md
 
 ### How to re-run all GitHub Actions jobs?
 
-There isn't a button that Dagger contributors can click in their fork that will
-re-run all GitHub Actions jobs. See issue
-[#1669](https://github.com/dagger/dagger/issues/1169) for more context.
+There isn't a button that Saivvy contributors can click in their fork that will
+re-run all GitHub Actions jobs.
 
 The current workaround is to re-create the last commit:
 
